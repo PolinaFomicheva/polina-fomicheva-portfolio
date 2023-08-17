@@ -2,6 +2,9 @@ import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/lightning.gif";
 import 'animate.css';
+
+import navIcon2 from '../assets/img/nav-icon2.png';
+import navIcon3 from "../assets/img/nav-icon3.svg";
 import TrackVisibility from 'react-on-screen';
 
 export const Contact = () => {
@@ -55,10 +58,19 @@ export const Contact = () => {
             </TrackVisibility>
           </Col>
           <Col size={12} md={6}>
+
             <TrackVisibility>
               {({ isVisible }) =>
+              
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <h2>Связаться со мной (демо)</h2>
+                  <h2>Связаться со мной: </h2>
+                  <p className="phone">Номер телефона: <a href="tel: +79856409628">+79856409628</a></p>
+                  <div className="social-icon-contact">
+              <a href="mailto:puffyoluv@yandex.ru"><img src={navIcon2} alt="Email" title="Email"/></a>
+              <a href="https://t.me/postpolnoch"><img src={navIcon3} alt="telegram" title="telegram"/></a>
+            </div>
+
+                <h3>Оставить контактные данные (демо)</h3>
                 <form onSubmit={handleSubmit}>
                   <Row>
                     <Col size={12} sm={6} className="px-1">

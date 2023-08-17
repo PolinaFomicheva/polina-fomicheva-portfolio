@@ -503,6 +503,72 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Projects Css ************/
+.phone {
+  text-align: center;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    color: #fff;
+    margin: 0 0 8px 0;
+    padding: 18px 26px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    transition: 0.3s ease-in-out;
+}
+
+.phone a {
+  width: 100%;
+  color: #fff;
+  margin: 0 0 8px 0;
+  padding: 18px 26px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  transition: 0.3s ease-in-out;
+}
+
+.social-icon-contact {
+  justify-content: center;
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.social-icon-contact a {
+  width: 62px;
+  height: 62px;
+  background: rgba(217, 217, 217, 0.1);
+  display: inline-flex;
+  border-radius: 50%;
+  margin-right: 6px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.social-icon-contact a::before {
+  content: "";
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transform: scale(0);
+transition: 0.3s ease-in-out;
+}
+.social-icon-contact a:hover::before {
+  transform: scale(1);
+}
+.social-icon-contact a img {
+width: 90%;
+z-index: 1;
+transition: 0.3s ease-in-out;
+}
+.social-icon-contact a:hover img {
+filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}
+
 .contact {
   background: linear-gradient(90.21deg, #a8a3a6 -5.91%, hsl(269, 46%, 26%) 111.58%);
   padding: 60px 0 200px 0;
