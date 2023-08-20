@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/polina-fomicheva-portfolio/static/css/main.dc9d2fc7.css",
-    "main.js": "/polina-fomicheva-portfolio/static/js/main.2da6599a.js",
+    "main.js": "/polina-fomicheva-portfolio/static/js/main.60206d38.js",
     "static/js/787.fb771931.chunk.js": "/polina-fomicheva-portfolio/static/js/787.fb771931.chunk.js",
     "static/media/header-img.png": "/polina-fomicheva-portfolio/static/media/header-img.b3a8455f1c12446667c3.png",
     "static/media/project-img2.png": "/polina-fomicheva-portfolio/static/media/project-img2.d08500161d2e479a19cd.png",
@@ -28,11 +28,11 @@
     "static/media/arrow2.svg": "/polina-fomicheva-portfolio/static/media/arrow2.3d9522b6fd8f2464b7200ebf2c1bb09a.svg",
     "static/media/arrow1.svg": "/polina-fomicheva-portfolio/static/media/arrow1.0c89b5b635adf255c2822c630aaa6ccf.svg",
     "main.dc9d2fc7.css.map": "/polina-fomicheva-portfolio/static/css/main.dc9d2fc7.css.map",
-    "main.2da6599a.js.map": "/polina-fomicheva-portfolio/static/js/main.2da6599a.js.map",
+    "main.60206d38.js.map": "/polina-fomicheva-portfolio/static/js/main.60206d38.js.map",
     "787.fb771931.chunk.js.map": "/polina-fomicheva-portfolio/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dc9d2fc7.css",
-    "static/js/main.2da6599a.js"
+    "static/js/main.60206d38.js"
   ]
 }
