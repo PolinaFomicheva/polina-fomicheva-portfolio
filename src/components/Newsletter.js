@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Col, Row, Alert } from "react-bootstrap";
+import emailjs from "@emailjs/browser";
 
 export const Newsletter = ({ status, message, onValidated }) => {
   const [email, setEmail] = useState('');
@@ -10,6 +11,7 @@ export const Newsletter = ({ status, message, onValidated }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    emailjs.sendForm('service_wrfkpao', 'template_lberoed', e.target, 'zBC-CPFc7ES-nDEwI')
     email &&
     email.indexOf("@") > -1 &&
     onValidated({
@@ -20,6 +22,10 @@ export const Newsletter = ({ status, message, onValidated }) => {
   const clearFields = () => {
     setEmail('');
   }
+
+
+
+
 
   return (
       <Col lg={12}>
@@ -34,7 +40,7 @@ export const Newsletter = ({ status, message, onValidated }) => {
             <Col md={6} xl={7}>
               <form onSubmit={handleSubmit}>
                 <div className="new-email-bx">
-                  <input value={email} type="email" onChange={(e) => setEmail(e.target.value)} placeholder="Email" />
+                  <input name="email_to" value={email} type="email" onChange={(e) => setEmail(e.target.value)} placeholder="Email" />
                   <button type="submit">Отправить</button>
                 </div>
               </form>
